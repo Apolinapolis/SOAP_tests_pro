@@ -1,11 +1,9 @@
 import json
-
 from requests import Session, Response
 from requests.structures import CaseInsensitiveDict
-
 from common.logging_config import produce_logger
-
 logger = produce_logger(__name__)
+
 
 
 def allure_request_logger(function):
@@ -19,7 +17,6 @@ def allure_request_logger(function):
                     f'RESPONSE HEADERS {prettyfy_headers(response.headers)}\n\n'
                     f'RESPONSE BODY {prettyfy_body(response.content)}\n\n')
         return response
-
     return wrapper
 
 
