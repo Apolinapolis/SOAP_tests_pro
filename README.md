@@ -5,12 +5,12 @@
 Цель — научиться писать автотесты на SOAP-запросы и ответы, работать с WSDL/XSD и валидировать контракт.
 
 ## Стек
-- Python + pytest + zeep (SOAP client)
-- lxml (валидация XML)
+- Python + pytest + Jinja2 (шаблонизатор)
+- xmlschema (валидация XML)
 - allure (отчёты)
 
 ## Структура
-- `tests/` — автотесты
+- `tests/soap` — автотесты
 - `samples/` — примеры SOAP-запросов и ответов (`.xml`)
 - `docs/` — контракты (`.wsdl`, `.xsd`)
 
