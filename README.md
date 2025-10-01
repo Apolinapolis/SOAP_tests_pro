@@ -11,10 +11,15 @@
 
 ## Структура
 - `tests/soap` — автотесты
-- `samples/` — примеры SOAP-запросов и ответов (`.xml`)
-- `docs/` — контракты (`.wsdl`, `.xsd`)
+- `tests/conftest.py` — фикстуры pytest
+- `templates/` — примеры SOAP-запросов и ответов (`.xml`, `.xsd`)
 
 ## Запуск
-```bash
-pytest -q --alluredir=reports/allure
+# 1. Установить зависимости
+pip install -r requirements.txt  
+
+# 2. Запустить тесты
+pytest -q --alluredir=reports/allure  
+
+# 3. Сформировать и открыть отчёт Allure
 allure serve reports/allure
