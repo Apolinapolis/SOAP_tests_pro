@@ -15,11 +15,6 @@
 - `templates/` — примеры SOAP-запросов и ответов (`.xml`, `.xsd`)
 
 ## Запуск
-Установить зависимости
-pip install -r requirements.txt  
-
-Запустить тесты
-pytest -q --alluredir=reports/allure  
-
-Сформировать и открыть отчёт Allure
-allure serve reports/allure
+- pip install -r requirements.txt  (установить зависимости)
+- pytest -q --alluredir=reports/allure (запустить тесты)
+- allure serve reports/allure (сфирмировать отчет)
